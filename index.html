@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Free Online Math Calculators | Everyday Math Tools</title>
+
+    <meta name="description" content="Use free online percentage, GPA, CGPA, grade, discount and exam calculators. Get quick results with simple explanations.">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="author" content="Everyday Math Tools">
+
+    <link rel="canonical" href="https://YOURDOMAIN.com/">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="logo" href="index.html">Everyday Math Tools</a>
+        <nav aria-label="Main navigation">
+            <a href="#calculators">Calculators</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <p class="eyebrow">FREE ONLINE CALCULATORS</p>
+            <h1>Make everyday math simple.</h1>
+            <p class="hero-text">
+                Calculate percentages, discounts, increases and more with
+                simple, easy-to-use tools.
+            </p>
+            <a class="primary-button" href="#calculators">Explore calculators</a>
+        </section>
+
+        <section class="calculator-section" id="calculators">
+            <div class="section-heading">
+                <p class="eyebrow">OUR TOOLS</p>
+                <h2>Choose a calculator</h2>
+                <p>Quick answers for common math questions.</p>
+            </div>
+
+            <div class="calculator-grid">
+                <article class="calculator-card">
+                    <div class="card-icon">%</div>
+                    <h3>Percentage Calculator</h3>
+                    <p>Find a percentage of any number.</p>
+
+                        <form id="percentage-form" class="calculator-form">
+                                <label for="percent-input">Percentage (%)</label>
+                                <input
+                                    id="percent-input"
+                                    type="number"
+                                    step="any"
+                                    placeholder="e.g. 20"
+                                    required
+                                >
+
+                                <label for="number-input">Number</label>
+                                <input
+                                    id="number-input"
+                                    type="number"
+                                    step="any"
+                                    placeholder="e.g. 150"
+                                    required
+                                >
+
+                                <button type="submit">Calculate</button>
+                                <p id="percentage-result" class="calculator-result" aria-live="polite"></p>
+                        </form>
+                </article>
+
+                <article class="calculator-card">
+                    <div class="card-icon">↗</div>
+                    <h3>Percentage Increase Calculator</h3>
+                    <p>Calculate how much a value increased.</p>
+
+                    <form id="increase-form" class="calculator-form">
+                        <label for="old-value">Old Value</label>
+                            <input
+                                id="old-value"
+                                type="number"
+                                step="any"
+                                placeholder="e.g. 100"
+                                required
+                            >
+
+                        <label for="new-value">New Value</label>
+                            <input
+                                id="new-value"
+                                type="number"
+                                step="any"
+                                placeholder="e.g. 150"
+                                required
+                            >
+
+                        <button type="submit">Calculate Increase</button>
+                        <p id="increase-result" class="calculator-result" aria-live="polite"></p>
+                    </form>
+                </article>
+
+                <article class="calculator-card">
+                    <div class="card-icon">↘</div>
+                    <h3>Percentage Decrease Calculator</h3>
+                    <p>Calculate how much a value decreased.</p>
+
+                    <form id="decrease-form" class="calculator-form">
+                    <label for="decrease-old-value">Old Value</label>
+                        <input
+                            id="decrease-old-value"
+                            type="number"
+                            step="any"
+                            placeholder="e.g. 200"
+                            required
+                        >
+
+                    <label for="decrease-new-value">New Value</label>
+                        <input
+                            id="decrease-new-value"
+                            type="number"
+                            step="any"
+                            placeholder="e.g. 150"
+                            required
+                        >
+
+                        <button type="submit">Calculate Decrease</button>
+                        <p id="decrease-result" class="calculator-result" aria-live="polite"></p>
+                    </form>
+                </article>
+
+                <article class="calculator-card">
+                    <div class="card-icon">↔</div>
+                    <h3>Percentage Change Calculator</h3>
+                    <p>Compare an old value with a new one.</p>
+
+                    <form id="change-form" class="calculator-form">
+                        <label for="change-old-value">Old Value</label>
+                            <input
+                                id="change-old-value"
+                                type="number"
+                                step="any"
+                                placeholder="e.g. 100"
+                                required
+                            >
+
+                        <label for="change-new-value">New Value</label>
+                            <input
+                                id="change-new-value"
+                                type="number"
+                                step="any"
+                                placeholder="e.g. 130"
+                                required
+                            >
+
+                    <button type="submit">Calculate Change</button>
+                    <p id="change-result" class="calculator-result" aria-live="polite"></p>
+                    </form>
+                </article>
+
+                <article class="calculator-card">
+                    <div class="card-icon">%</div>
+                    <h3>Discount Calculator</h3>
+                    <p>Find the sale price and money saved.</p>
+
+                    <form id="discount-form" class="calculator-form">
+                        <label for="original-price">Original Price</label>
+                            <input
+                                id="original-price"
+                                type="number"
+                                min="0"
+                                step="any"
+                                placeholder="e.g. 2000"
+                                required
+                            >
+
+                        <label for="discount-percent">Discount (%)</label>
+                            <input
+                                id="discount-percent"
+                                type="number"
+                                min="0"
+                                max="100"
+                                step="any"
+                                placeholder="e.g. 20"
+                                required
+                                >
+
+                    <button type="submit">Calculate Discount</button>
+                    <p id="discount-result" class="calculator-result" aria-live="polite"></p>
+                    </form>
+                </article>
+
+                <article class="calculator-card">
+                    <div class="card-icon">✓</div>
+                    <h3>Marks Percentage Calculator</h3>
+                    <p>Calculate your exam marks percentage.</p>
+
+                    <form id="marks-form" class="calculator-form">
+                        <label for="obtained-marks">Obtained Marks</label>
+                        <input
+                            id="obtained-marks"
+                            type="number"
+                            min="0"
+                            step="any"
+                            placeholder="e.g. 850"
+                            required
+                        >
+
+                        <label for="total-marks">Total Marks</label>
+                        <input
+                            id="total-marks"
+                            type="number"
+                            min="0"
+                            step="any"
+                            placeholder="e.g. 1100"
+                            required
+                        >
+
+                    <button type="submit">Calculate Percentage</button>
+
+                    <p id="marks-result" class="calculator-result" aria-live="polite"></p>
+                    </form>
+                </article>
+
+                <article class="calculator-card">
+    <div class="card-icon">%</div>
+    <h3>What Percentage Is X of Y?</h3>
+    <p>Find what percentage one number is of another.</p>
+
+    <form id="what-percent-form" class="calculator-form">
+        <label for="first-number">First Number</label>
+        <input
+            id="first-number"
+            type="number"
+            step="any"
+            placeholder="e.g. 30"
+            required
+        >
+
+        <label for="second-number">Second Number</label>
+        <input
+            id="second-number"
+            type="number"
+            step="any"
+            placeholder="e.g. 150"
+            required
+        >
+
+        <button type="submit">Calculate Percentage</button>
+
+        <p id="what-percent-result" class="calculator-result" aria-live="polite"></p>
+    </form>
+</article>
+
+<article class="calculator-card">
+    <div class="card-icon">%</div>
+    <h3>Percentage Difference Calculator</h3>
+    <p>Find the percentage difference between two numbers.</p>
+
+    <form id="difference-form" class="calculator-form">
+        <label for="difference-first">First Number</label>
+        <input
+            id="difference-first"
+            type="number"
+            step="any"
+            placeholder="e.g. 100"
+            required
+        >
+
+        <label for="difference-second">Second Number</label>
+        <input
+            id="difference-second"
+            type="number"
+            step="any"
+            placeholder="e.g. 120"
+            required
+        >
+
+        <button type="submit">Calculate Difference</button>
+
+        <p id="difference-result" class="calculator-result" aria-live="polite"></p>
+    </form>
+</article>
+
+<article class="calculator-card">
+    <div class="card-icon">%</div>
+    <h3>Reverse Percentage Calculator</h3>
+    <p>Find the original value before a percentage increase or decrease.</p>
+
+    <form id="reverse-form" class="calculator-form">
+        <label for="final-value">Final Value</label>
+        <input
+            id="final-value"
+            type="number"
+            min="0"
+            step="any"
+            placeholder="e.g. 800"
+            required
+        >
+
+        <label for="reverse-percent">Percentage</label>
+        <input
+            id="reverse-percent"
+            type="number"
+            min="0"
+            max="100"
+            step="any"
+            placeholder="e.g. 20"
+            required
+        >
+
+        <label for="reverse-type">Percentage Type</label>
+        <select id="reverse-type">
+            <option value="decrease">After Decrease (Discount)</option>
+            <option value="increase">After Increase</option>
+        </select>
+
+        <button type="submit">Calculate Original Value</button>
+
+        <p id="reverse-result" class="calculator-result" aria-live="polite"></p>
+    </form>
+</article>
+
+<article class="calculator-card">
+    <div class="card-icon">🎓</div>
+    <h3>GPA Calculator</h3>
+    <p>Calculate your GPA using grades and credit hours.</p>
+
+    <form id="gpa-form" class="calculator-form">
+
+        <label for="subject-count">Number of Subjects</label>
+        <select id="subject-count">
+            <option value="3" selected>3 Subjects</option>
+            <option value="4">4 Subjects</option>
+            <option value="5">5 Subjects</option>
+            <option value="6">6 Subjects</option>
+        </select>
+
+        <div id="gpa-subjects"></div>
+
+        <button type="submit">Calculate GPA</button>
+
+        <p id="gpa-result" class="calculator-result" aria-live="polite"></p>
+
+    </form>
+</article>
+
+<article class="calculator-card">
+    <div class="card-icon">🎓</div>
+    <h3>CGPA Calculator</h3>
+    <p>Calculate your cumulative GPA across multiple semesters.</p>
+
+    <form id="cgpa-form" class="calculator-form">
+
+        <label for="semester-count">Number of Semesters</label>
+        <select id="semester-count">
+            <option value="2" selected>2 Semesters</option>
+            <option value="3">3 Semesters</option>
+            <option value="4">4 Semesters</option>
+            <option value="5">5 Semesters</option>
+            <option value="6">6 Semesters</option>
+            <option value="8">8 Semesters</option>
+        </select>
+
+        <div id="cgpa-semesters"></div>
+
+        <button type="submit">Calculate CGPA</button>
+
+        <p id="cgpa-result" class="calculator-result" aria-live="polite"></p>
+
+    </form>
+</article>
+
+<article class="calculator-card">
+    <div class="card-icon">🎓</div>
+    <h3>Grade Calculator</h3>
+    <p>Find your grade based on your percentage.</p>
+
+    <form id="grade-form" class="calculator-form">
+
+        <label for="grade-percentage">Your Percentage</label>
+
+        <input
+            id="grade-percentage"
+            type="number"
+            min="0"
+            max="100"
+            step="any"
+            placeholder="e.g. 85"
+            required
+        >
+
+        <button type="submit">Calculate Grade</button>
+
+        <p id="grade-result" class="calculator-result" aria-live="polite"></p>
+
+    </form>
+</article>
+
+<article class="calculator-card">
+    <div class="card-icon">🎯</div>
+    <h3>Final Grade Calculator</h3>
+    <p>Find the marks needed in your final exam to reach your target grade.</p>
+
+    <form id="final-grade-form" class="calculator-form">
+
+        <label for="current-grade">Current Grade (%)</label>
+        <input
+            id="current-grade"
+            type="number"
+            min="0"
+            max="100"
+            step="any"
+            placeholder="e.g. 75"
+            required
+        >
+
+        <label for="final-weight">Final Exam Weight (%)</label>
+        <input
+            id="final-weight"
+            type="number"
+            min="0.01"
+            max="100"
+            step="any"
+            placeholder="e.g. 40"
+            required
+        >
+
+        <label for="target-grade">Target Overall Grade (%)</label>
+        <input
+            id="target-grade"
+            type="number"
+            min="0"
+            max="100"
+            step="any"
+            placeholder="e.g. 80"
+            required
+        >
+
+        <button type="submit">Calculate Required Marks</button>
+
+        <p id="final-grade-result" class="calculator-result" aria-live="polite"></p>
+
+    </form>
+</article>
+
+<article class="calculator-card">
+    <div class="card-icon">⚖️</div>
+    <h3>Weighted Grade Calculator</h3>
+    <p>Calculate your overall grade using scores and their weights.</p>
+
+    <form id="weighted-grade-form" class="calculator-form">
+        <label for="weighted-item-count">Number of Grade Items</label>
+        <select id="weighted-item-count" required>
+            <option value="2" selected>2 Items</option>
+            <option value="3">3 Items</option>
+            <option value="4">4 Items</option>
+            <option value="5">5 Items</option>
+            <option value="6">6 Items</option>
+        </select>
+
+        <div id="weighted-grade-items"></div>
+
+        <button type="submit">Calculate Weighted Grade</button>
+        <p id="weighted-grade-result" class="calculator-result" aria-live="polite"></p>
+    </form>
+</article>
+
+<article class="calculator-card">
+    <div class="card-icon">📝</div>
+    <h3>Exam Marks Calculator</h3>
+    <p>Find the marks you need to reach your target percentage.</p>
+
+    <form id="exam-marks-form" class="calculator-form">
+        <label for="exam-total-marks">Total Exam Marks</label>
+        <input
+            id="exam-total-marks"
+            type="number"
+            min="1"
+            step="any"
+            placeholder="e.g. 100"
+            required
+        >
+
+        <label for="exam-current-marks">Marks Already Earned</label>
+        <input
+            id="exam-current-marks"
+            type="number"
+            min="0"
+            step="any"
+            placeholder="e.g. 35"
+            required
+        >
+
+        <label for="exam-target-percent">Target Overall Percentage (%)</label>
+        <input
+            id="exam-target-percent"
+            type="number"
+            min="0"
+            max="100"
+            step="any"
+            placeholder="e.g. 80"
+            required
+        >
+
+        <button type="submit">Calculate Required Marks</button>
+        <p id="exam-marks-result" class="calculator-result" aria-live="polite"></p>
+    </form>
+</article>
+
+            </div>
+        </section>
+
+<section class="content-section" id="percentage-guide">
+    <h2>Percentage Calculators: Complete Guide</h2>
+
+    <p>
+        Percentages are used in everyday life, including shopping,
+        education, finance and business. Our percentage calculators
+        help you solve common percentage problems quickly and easily.
+    </p>
+
+    <article class="content-item">
+        <h3>1. What Is a Percentage?</h3>
+        <p>
+            A percentage represents a number as a part of 100.
+            It is commonly used to compare values, calculate marks,
+            find discounts and understand changes in quantities.
+        </p>
+        <h4>Formula</h4>
+        <p>Percentage = (Part / Total) × 100</p>
+        <h4>Example</h4>
+        <p>
+            If you score 80 marks out of 100, your percentage is 80%.
+        </p>
+    </article>
+
+    <article class="content-item">
+        <h3>2. How to Calculate a Percentage of a Number</h3>
+        <p>
+            To find a percentage of a number, divide the percentage
+            by 100 and multiply it by the given number.
+        </p>
+        <h4>Formula</h4>
+        <p>Result = (Percentage / 100) × Number</p>
+        <h4>Example</h4>
+        <p>20% of 150 = 30.</p>
+    </article>
+
+    <article class="content-item">
+        <h3>3. Percentage Increase</h3>
+        <p>
+            Percentage increase shows how much a value has grown
+            compared with its original value.
+        </p>
+        <h4>Formula</h4>
+        <p>
+            Percentage Increase = ((New Value - Old Value) / Old Value) × 100
+        </p>
+        <h4>Example</h4>
+        <p>
+            If a price increases from 100 to 150, the increase is 50%.
+        </p>
+    </article>
+
+    <article class="content-item">
+        <h3>4. Percentage Decrease</h3>
+        <p>
+            Percentage decrease measures how much a value has fallen
+            compared with its original value.
+        </p>
+        <h4>Formula</h4>
+        <p>
+            Percentage Decrease = ((Old Value - New Value) / Old Value) × 100
+        </p>
+        <h4>Example</h4>
+        <p>
+            If a price decreases from 200 to 150, the decrease is 25%.
+        </p>
+    </article>
+
+    <article class="content-item">
+        <h3>5. Percentage Change</h3>
+        <p>
+            Percentage change tells you whether a value has increased
+            or decreased compared with its previous value.
+        </p>
+        <h4>Formula</h4>
+        <p>
+            Percentage Change = ((New Value - Old Value) / Absolute Old Value) × 100
+        </p>
+        <h4>Example</h4>
+        <p>
+            If a value changes from 100 to 130, it has increased by 30%.
+        </p>
+    </article>
+
+    <article class="content-item">
+        <h3>6. Discount Calculation</h3>
+        <p>
+            A discount is a reduction in the original price of a product.
+            You can calculate how much money you save and the final price.
+        </p>
+        <h4>Formula</h4>
+        <p>Discount = (Original Price × Discount Rate) / 100</p>
+        <p>Final Price = Original Price - Discount</p>
+        <h4>Example</h4>
+        <p>
+            A 20% discount on a price of 2,000 saves 400.
+            The final price is 1,600.
+        </p>
+    </article>
+
+    <article class="content-item">
+        <h3>7. Marks Percentage</h3>
+        <p>
+            Students use marks percentage to find their academic
+            performance based on obtained marks and total marks.
+        </p>
+        <h4>Formula</h4>
+        <p>Marks Percentage = (Obtained Marks / Total Marks) × 100</p>
+        <h4>Example</h4>
+        <p>
+            If you obtain 450 marks out of 500, your percentage is 90%.
+        </p>
+    </article>
+
+    <article class="content-item">
+        <h3>8. What Percentage Is One Number of Another?</h3>
+        <p>
+            This calculation helps you find what percentage one number
+            represents of another number.
+        </p>
+        <h4>Formula</h4>
+        <p>Percentage = (First Number / Second Number) × 100</p>
+        <h4>Example</h4>
+        <p>30 is 20% of 150.</p>
+    </article>
+
+    <article class="content-item">
+        <h3>9. Percentage Difference</h3>
+        <p>
+            Percentage difference compares two values using their
+            average, without treating either value as the original.
+        </p>
+        <h4>Formula</h4>
+        <p>
+            Percentage Difference =
+            (Absolute Difference / Average of Absolute Values) × 100
+        </p>
+        <h4>Example</h4>
+        <p>
+            The percentage difference between 100 and 120 is 18.18%.
+        </p>
+    </article>
+
+    <article class="content-item">
+        <h3>10. Reverse Percentage</h3>
+        <p>
+            Reverse percentage helps you find an original value when
+            you know the final value after a percentage increase or decrease.
+        </p>
+        <h4>Formula</h4>
+        <p>
+            After Increase: Original Value = Final Value / (1 + Rate / 100)
+        </p>
+        <p>
+            After Decrease: Original Value = Final Value / (1 - Rate / 100)
+        </p>
+        <h4>Example</h4>
+        <p>
+            If a price after a 20% discount is 800, its original price was 1,000.
+        </p>
+    </article>
+</section>
+
+<section class="content-section" id="academic-guide">
+    <h2>Academic Calculators: Complete Guide</h2>
+
+    <p>
+        Understanding your academic performance helps you set goals
+        and track your progress. These guides explain how GPA, CGPA
+        and grades are calculated.
+    </p>
+
+    <article class="content-item">
+        <h3>1. What Is GPA (Grade Point Average)?</h3>
+
+        <p>
+            GPA is a numerical representation of a student's academic
+            performance during a semester. It is calculated using
+            grade points and the credit hours of each subject.
+        </p>
+
+        <h4>GPA Formula</h4>
+        <p>
+            GPA = Total (Grade Points × Credit Hours) / Total Credit Hours
+        </p>
+
+        <h4>Example</h4>
+        <p>
+            Suppose you study two subjects with equal credit hours.
+            Your grade points are 4.0 and 3.0. Your GPA is 3.50.
+        </p>
+
+        <h4>Important Note</h4>
+        <p>
+            Grade point scales can vary between universities.
+            Our calculator currently uses a general 4.0 grading scale.
+        </p>
+    </article>
+
+    <article class="content-item">
+        <h3>2. What Is CGPA (Cumulative Grade Point Average)?</h3>
+
+        <p>
+            CGPA represents your overall academic performance across
+            multiple semesters. It considers the GPA and credit hours
+            of each semester.
+        </p>
+
+        <h4>CGPA Formula</h4>
+        <p>
+            CGPA = Total (Semester GPA × Semester Credit Hours) /
+            Total Credit Hours
+        </p>
+
+        <h4>Example</h4>
+        <p>
+            If your first semester GPA is 3.50 with 15 credit hours
+            and your second semester GPA is 4.00 with 15 credit hours,
+            your CGPA is 3.75.
+        </p>
+
+        <h4>Important Note</h4>
+        <p>
+            For an accurate CGPA, enter the credit hours completed
+            in each semester. University grading policies may differ.
+        </p>
+    </article>
+
+    <article class="content-item">
+        <h3>3. How to Calculate Your Grade?</h3>
+
+        <p>
+            A grade represents your academic performance based on
+            the percentage of marks you achieve. Grading systems
+            differ between schools, colleges and universities.
+        </p>
+
+        <h4>Percentage Formula</h4>
+        <p>
+            Percentage = (Obtained Marks / Total Marks) × 100
+        </p>
+
+        <h4>Example</h4>
+        <p>
+            If you obtain 85 marks out of 100, your percentage is 85%.
+        </p>
+
+        <h4>Important Note</h4>
+        <p>
+            Our Grade Calculator currently uses a general grading scale.
+            Actual grade boundaries may vary by institution.
+        </p>
+    </article>
+</section>
+
+<section class="content-section" id="exam-guide">
+    <h2>Exam and Grade Planning: Complete Guide</h2>
+
+    <p>
+        Planning your academic performance can help you understand
+        what scores you need to achieve your desired results.
+        These calculators make grade calculations easier.
+    </p>
+
+    <article class="content-item">
+        <h3>1. Final Grade Calculator</h3>
+
+        <p>
+            A Final Grade Calculator helps you find the score required
+            in your final exam to achieve a target overall grade.
+            It uses your current coursework grade and the final exam weight.
+        </p>
+
+        <h4>Formula</h4>
+        <p>
+            Required Final Exam Score =
+            [Target Grade - (Current Grade × (1 - Final Exam Weight / 100))]
+            / (Final Exam Weight / 100)
+        </p>
+
+        <h4>Example</h4>
+        <p>
+            If your current grade is 75%, the final exam is worth 40%,
+            and your target overall grade is 80%, you need 87.50%
+            in the final exam.
+        </p>
+
+        <h4>Important Note</h4>
+        <p>
+            Enter your average percentage for completed coursework
+            as your current grade. The final exam weight should represent
+            its share of the total course grade.
+        </p>
+    </article>
+
+    <article class="content-item">
+        <h3>2. Weighted Grade Calculator</h3>
+
+        <p>
+            A Weighted Grade Calculator calculates your overall grade
+            when assignments, quizzes, projects and exams have different
+            percentage weights.
+        </p>
+
+        <h4>Formula</h4>
+        <p>
+            Weighted Grade =
+            Sum of (Score × Weight) / Total Weight
+        </p>
+
+        <h4>Example</h4>
+        <p>
+            If your assignment score is 80% with a 20% weight,
+            your quiz score is 90% with a 30% weight,
+            and your exam score is 70% with a 50% weight,
+            your weighted grade is 78%.
+        </p>
+
+        <h4>Important Note</h4>
+        <p>
+            For a complete course grade, the weights should add up to 100%.
+            Make sure you enter each score and its corresponding weight correctly.
+        </p>
+    </article>
+
+    <article class="content-item">
+        <h3>3. Exam Marks Calculator</h3>
+
+        <p>
+            An Exam Marks Calculator helps you find how many additional
+            marks you need to reach a target percentage based on your
+            total marks and marks already earned.
+        </p>
+
+        <h4>Formula</h4>
+        <p>
+            Required Marks = (Target Percentage / 100 × Total Marks)
+            - Marks Already Earned
+        </p>
+
+        <h4>Example</h4>
+        <p>
+            If the total marks are 100, you have already earned 35 marks,
+            and your target is 80%, you need 45 more marks.
+        </p>
+
+        <h4>Important Note</h4>
+        <p>
+            Enter the total marks for the complete assessment and the
+            marks you have already earned toward that total. Your target
+            must be achievable with the remaining marks.
+        </p>
+    </article>
+</section>
+
+
+<section class="content-section" id="faqs">
+    <h2>Frequently Asked Questions</h2>
+    <p>Find answers to common questions about our free math and academic calculators.</p>
+
+    <div class="content-item">
+        <h3>Are these calculators free to use?</h3>
+        <p>Yes. All calculators on Everyday Math Tools are free to use. No registration is required.</p>
+    </div>
+
+    <div class="content-item">
+        <h3>Are the calculator results accurate?</h3>
+        <p>Our calculators use standard mathematical formulas. However, always check your institution's rules for GPA, grades, and academic calculations.</p>
+    </div>
+
+    <div class="content-item">
+        <h3>Can I use these calculators on my mobile phone?</h3>
+        <p>Yes. The website is designed to work on computers, tablets, and mobile phones.</p>
+    </div>
+
+    <div class="content-item">
+        <h3>Do I need to create an account?</h3>
+        <p>No. You can use the calculators directly without creating an account.</p>
+    </div>
+
+    <div class="content-item">
+        <h3>Do you store the numbers I enter?</h3>
+        <p>The calculators process your inputs in your browser. Please read our Privacy Policy for details about website data and third-party services.</p>
+    </div>
+
+    <div class="content-item">
+        <h3>Why can GPA and grade results differ between institutions?</h3>
+        <p>Different schools and universities may use different grading scales, credit-hour rules, and grade boundaries. Our academic calculators use general assumptions, so check your institution's official criteria.</p>
+    </div>
+</section>
+
+
+<section class="about-section" id="about">
+    <h2>About Everyday Math Tools</h2>
+
+    <p>
+        Everyday Math Tools is a free online platform designed
+        to make everyday mathematical and academic calculations
+        simple, quick and accessible.
+    </p>
+
+    <p>
+        Our website provides easy-to-use calculators for
+        percentages, discounts, marks, GPA, CGPA, grades and
+        exam results. Each tool is designed to help students
+        and everyday users solve common calculation problems
+        without complicated steps.
+    </p>
+
+    <p>
+        We aim to provide clear results, straightforward
+        explanations and a user-friendly experience across
+        desktop, tablet and mobile devices.
+    </p>
+
+    <p>
+        Our academic calculators use general calculation
+        methods. Since grading systems and academic rules
+        can vary between institutions, users should always
+        verify important results with their official guidelines.
+    </p>
+</section>
+
+
+<section class="content-section" id="contact">
+    <h2>Contact Us</h2>
+    <p>
+        Have a question, suggestion or found an issue with one
+        of our calculators? We would be happy to hear from you.
+    </p>
+    <p>
+        Email: <a href="mailto:contact@YOURDOMAIN.com">Contact Us</a>
+    </p>
+</section>
+
+
+    </main>
+
+    
+<footer class="site-footer">
+    <p>&copy; 2026 Everyday Math Tools. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#calculators">Calculators</a>
+        <a href="#contact">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+    </div>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
