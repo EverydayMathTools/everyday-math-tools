@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://everydaymathtools.github.io/everyday-math-tools/sitemap.xml
